@@ -1,0 +1,977 @@
+# Mark Zuckerberg on Llama 3.1, Open Source, AI Agents, Safety, and more
+# https://www.youtube.com/watch/Vy3OkbtUa5k
+
+00:00:00.080 the first time we're releasing a 405
+00:00:02.280 billion parameter model by far the most
+00:00:04.279 sophisticated open source model that
+00:00:06.080 that I think anyone has has put out I
+00:00:07.600 was a little shocked by how directly you
+00:00:09.679 called out apple and their closed
+00:00:11.320 approach can you kind of expand on that
+00:00:13.839 and where Apple has been a blocker for
+00:00:15.839 meta yeah I think it's a little bit Soul
+00:00:18.080 crushing when you go build features that
+00:00:20.519 are what you believe is good for for
+00:00:22.480 your community and then you're told that
+00:00:24.240 you can't ship them because some company
+00:00:26.760 wants to put you in a box so that they
+00:00:28.480 they can better compete with you can
+00:00:30.119 talk more about your long-term vision
+00:00:32.279 for what you think is going to happen
+00:00:33.960 with AI and possibly AGI in the
+00:00:37.320 future all right Mark thanks so much for
+00:00:39.600 doing this um obviously huge AI
+00:00:42.960 announcement from meta today can you
+00:00:44.760 give us the rundown on everything
+00:00:46.320 released and why it's important yeah
+00:00:48.879 sure so I mean the big release today
+00:00:51.199 first of all happy to be doing this big
+00:00:53.199 fan of what you do um the big release
+00:00:55.879 today is llama 3.1 and we're releasing
+00:00:58.920 three models
+00:01:00.440 um the first time we're releasing a 405
+00:01:03.120 billion parameter model um so it's by
+00:01:05.360 far the most sophisticated open source
+00:01:07.159 model that that I think anyone is has
+00:01:08.759 put out um and and it really kind of is
+00:01:12.040 competitive with some of the leading
+00:01:13.119 closed models and in some areas is even
+00:01:15.119 ahead so I'm really excited to see what
+00:01:17.320 people do with that especially now that
+00:01:19.640 we're making it so that our the
+00:01:21.920 community policies around llama allow
+00:01:23.680 people to use it as a teacher model to
+00:01:26.360 distill and fine-tune and um and
+00:01:29.640 basically create whatever other models
+00:01:31.000 they want with it um in addition to that
+00:01:33.479 we've distilled the 405 billion
+00:01:35.479 parameter model down to make newer and
+00:01:38.680 updated and now leading um for for their
+00:01:41.720 size 70 billion and 8 billion parameter
+00:01:43.960 models they also have really good
+00:01:46.320 performance um really good kind of cost
+00:01:50.200 per performance ratios so I'm really
+00:01:52.759 excited to see what everyone does with
+00:01:54.040 this um you know I mean taking a step
+00:01:56.520 back I think this is a pretty big moment
+00:01:58.439 for open source AI
+00:02:00.479 um you know I've been reflecting on this
+00:02:02.320 and I I kind of think it's you know I
+00:02:04.680 thought for a while that open source AI
+00:02:06.119 was going to become the industry
+00:02:07.599 standard and I thought that it would
+00:02:10.399 basically follow the path that Linux did
+00:02:14.319 where you know if you if you um just go
+00:02:17.840 back to before Linux was popular there
+00:02:19.720 you know there were all these companies
+00:02:20.920 that had their own closed versions of
+00:02:22.519 Unix and at the time you know there's
+00:02:25.040 nothing that was sort of that
+00:02:27.080 sophisticated that had ever been done as
+00:02:28.840 an open source project and people
+00:02:30.319 thought hey no this is like the closed
+00:02:32.440 model of development is the only way to
+00:02:33.599 do something that's this Advanced and at
+00:02:35.599 first Linux kind of got its foot hold
+00:02:38.720 because um it was cheaper because
+00:02:41.480 developers could customize it in
+00:02:42.760 different ways and then over time as the
+00:02:44.560 ecosystem built out it you know got more
+00:02:47.480 scrutiny so it actually became the more
+00:02:49.000 secure one it became the more advanced
+00:02:51.040 one um there were more partners that
+00:02:52.959 basically built more capabilities in the
+00:02:54.959 case of Linux more drivers um and things
+00:02:57.519 like that that basically ended up making
+00:02:59.159 it have more capabilities as well than
+00:03:01.680 any closed source unic so I think that
+00:03:04.319 this moment with llama 3.1 is kind of
+00:03:07.080 like that inflection point where um I
+00:03:10.400 think llama has the the opportunity to
+00:03:12.440 become the open- source AI standard for
+00:03:15.959 open source to become the standard the
+00:03:17.599 industry standard for for AI and even in
+00:03:20.640 the places where it's not yet ahead on
+00:03:22.440 performance it leads on on kind of cost
+00:03:26.000 and on on customizability and on the
+00:03:28.519 ability to take the model and find tune
+00:03:30.159 it and do all the things that you want
+00:03:31.879 with it um so I think that those are
+00:03:34.360 just huge advantages that that we're
+00:03:35.959 going to see developers take and we're
+00:03:38.120 focusing on building out this partner
+00:03:39.400 ecosystem and there are going to be all
+00:03:40.799 these different capabilities that get
+00:03:41.879 built out around it so yeah really
+00:03:43.439 excited to talk about all that yeah I've
+00:03:45.400 seen all the benchmarks it looks
+00:03:47.720 incredible um obviously the first ever
+00:03:50.439 open source Frontier Model uh for 405b
+00:03:54.159 um are there any specific real world use
+00:03:56.720 cases that you're really excited about
+00:03:58.360 to see people build with the model well
+00:04:01.239 the thing that I'm most excited about is
+00:04:03.599 seeing people use it to distill and and
+00:04:07.799 fine-tune their own models right it's I
+00:04:10.280 mean like you're saying I me this is the
+00:04:11.519 first open source Frontier level model
+00:04:14.319 but it's not the first Frontier level
+00:04:16.120 model so there have been other models
+00:04:18.238 that sort of have that capacity and yeah
+00:04:19.918 people are going to want to do inference
+00:04:21.160 directly on the 405 because it's you
+00:04:23.680 know by our our estimates it's going to
+00:04:26.160 be about 50% cheaper I think than than
+00:04:28.440 GPT 40 um to do that directly and um so
+00:04:32.080 I think that that that obviously makes a
+00:04:33.320 difference to a lot of people but the
+00:04:36.199 thing that I think is really new in the
+00:04:37.680 world with this is the because it's open
+00:04:40.199 weights um the ability to take the model
+00:04:44.720 and distill it down to whatever size
+00:04:47.639 that you want to use it for synthetic
+00:04:49.479 data generation to use it as a teacher
+00:04:51.759 model um you know so our vision for the
+00:04:54.240 future it's not just okay it was never
+00:04:56.039 that there's going to be One Singular
+00:04:57.400 thing I think this is like open AI sort
+00:04:59.320 of as this Vision that they're going to
+00:05:00.520 build kind of one big AI anthropic does
+00:05:03.240 too Google does to it's never been our
+00:05:05.360 vision our our vision is that there
+00:05:07.280 should be lots of different models I
+00:05:08.919 think every startup out there every
+00:05:11.120 Enterprise governments they all kind of
+00:05:13.560 want to have their own custom models and
+00:05:17.440 and yeah when the closed ecosystem was
+00:05:19.199 so much better than open source it was
+00:05:21.240 just better to take the vanilla Clos
+00:05:23.440 thing off the shelf because even though
+00:05:25.759 you could customize open source there
+00:05:27.479 was still some gap between the
+00:05:28.680 performance that you could get but now
+00:05:30.039 we don't see that anymore right now as
+00:05:32.360 open source basically closes the Gap I
+00:05:34.600 think you're just going to see this wide
+00:05:36.639 proliferation of models where people now
+00:05:40.560 have the incentive to basically
+00:05:41.880 customize and build and train exactly
+00:05:44.000 the right size model for what they're
+00:05:45.440 doing um train their data into it
+00:05:47.680 they're going to have the tools to do it
+00:05:48.880 because of a lot of the partner
+00:05:49.800 Integrations that the companies like um
+00:05:52.560 like Amazon are doing with AWS or data
+00:05:54.639 bricks um or different folks like that
+00:05:56.919 who are building these whole Suites of
+00:05:58.319 services for distilling and fine-tuning
+00:06:00.639 um open models so I think that that's
+00:06:02.440 going to be the thing that's new here
+00:06:03.639 and that's really exciting is how far
+00:06:05.520 can that get pushed and um and that's a
+00:06:07.880 completely new capability in the world
+00:06:09.199 because there hasn't been an open source
+00:06:11.000 or open weight model of of of kind of
+00:06:13.240 this um sophistication that's ever been
+00:06:14.919 released before yeah it's a really big
+00:06:17.880 deal and um how are you educating
+00:06:21.199 developers to use these tools and more
+00:06:24.840 broadly does meta have like a plan or
+00:06:26.960 strategy to educate the rest of the
+00:06:29.080 world on open source and why it really
+00:06:31.080 matters yeah so I'd say before llama 3.1
+00:06:34.759 our approach I mean the reason that meta
+00:06:36.400 fundamentally is investing in this is we
+00:06:38.240 basically want to know that we have
+00:06:40.080 access to to a leading model um you know
+00:06:43.560 because of some of our our history of of
+00:06:46.280 kind of how mobile worked and things
+00:06:47.720 like that um we didn't want to be in a
+00:06:49.840 position where we had to rely on some
+00:06:52.000 competitor for this kind of fundamental
+00:06:53.960 technology so we built it for ourselves
+00:06:56.800 and before llama 3.1 you know we we kind
+00:07:00.599 of add this Instinct that if we made it
+00:07:03.199 open source there would be a community
+00:07:04.520 that would grow around it and that would
+00:07:06.599 actually extend the capabilities and
+00:07:07.800 make it more valuable for everyone
+00:07:08.960 including us um because at the end of
+00:07:11.800 the day this isn't just a technology
+00:07:13.039 it's an ecosystem right that that that
+00:07:14.919 you're developing so um in order for
+00:07:16.720 this to end up being a useful thing for
+00:07:18.120 us there also needs to be a broad
+00:07:19.560 ecosystem one of the big changes that
+00:07:22.800 that I think we see with llama 3.1 is
+00:07:24.840 instead of just building it for
+00:07:25.800 ourselves and throwing it over the wall
+00:07:27.319 and letting developers use it this time
+00:07:29.840 we're really taking a much more
+00:07:31.199 proactive stance on building
+00:07:34.240 Partnerships and making sure that um
+00:07:37.560 there's this whole ecosystem of
+00:07:38.919 companies that can do interesting things
+00:07:41.280 with the model and conserve developers
+00:07:42.879 in ways that we're not going to right
+00:07:44.599 we're not a public cloud provider right
+00:07:46.800 it's Ian we're not AWS or or Google or
+00:07:49.360 Azure right it's so developers aren't
+00:07:51.240 going to come to us to build their stuff
+00:07:52.840 but we want to make sure that all those
+00:07:54.000 public clouds are well equipped to do
+00:07:55.560 this um that goes for some of the more
+00:07:59.159 basic
+00:08:00.120 functionality like just hosting the
+00:08:01.919 models and serving inference um but we
+00:08:04.599 also want to make it some of the new
+00:08:06.400 stuff that's going to be possible with
+00:08:07.680 this like distillation and fine-tuning
+00:08:11.039 um that there's specific services that
+00:08:12.479 are set up for that and you know a lot
+00:08:14.000 of those Services haven't been that well
+00:08:15.479 built out before because that's not
+00:08:16.720 really a thing that you could do as well
+00:08:17.919 with closed models so um there was
+00:08:19.720 specific work that we had to do with
+00:08:21.479 those Partners to enable that at the
+00:08:23.479 same time I think that there are also
+00:08:24.440 going to be folks um like grock right
+00:08:27.199 who are doing really interesting work on
+00:08:29.599 really kind of ultra low latency um
+00:08:33.120 inference and I'm really excited to get
+00:08:34.919 this in their hands and they they're
+00:08:36.440 building something for launch that
+00:08:37.760 basically is um is gonna is is is going
+00:08:41.080 to enable that too and then there's this
+00:08:43.120 whole set of Enterprise companies so
+00:08:44.720 folks like like Dell or you know
+00:08:47.240 scale.ai or deoe or Accenture who um
+00:08:50.680 work with all the Enterprises around the
+00:08:52.160 world on on technology deployments and I
+00:08:53.920 think those are going to be a lot of the
+00:08:55.000 folks who um help build kind of custom
+00:08:59.120 models for you know whether they're
+00:09:00.839 large Enterprises or governments a lot
+00:09:03.440 of folks who basically want to have a
+00:09:05.680 model that's their model that they can
+00:09:07.000 train their custom data into it but they
+00:09:09.279 um you know a lot of companies don't
+00:09:10.839 want to send their data over an API to
+00:09:13.360 you know Google or open AI it's and not
+00:09:15.240 because um not because those companies
+00:09:17.560 have any particular privacy issue but
+00:09:19.079 it's the same reason why people like
+00:09:20.040 encryption and WhatsApp right they
+00:09:21.920 people just want kind of secure by
+00:09:24.240 Design architectures where their data
+00:09:27.240 can can kind of stay with them and um
+00:09:30.000 I think that there's G to be a whole
+00:09:30.880 market around things like that that get
+00:09:32.240 built out too so I'm pretty excited
+00:09:33.560 about all of this but yeah we're taking
+00:09:35.000 a much more proactive position this time
+00:09:37.360 and helping to build out the ecosystem
+00:09:38.800 because I think that's how how this um
+00:09:40.720 grows and just becomes more valuable for
+00:09:42.600 everyone yeah I love how close you are
+00:09:45.360 to the developer Community um just me
+00:09:48.360 myself being in the community I know for
+00:09:50.440 a fact that people really want these
+00:09:53.000 private and local models so um moving on
+00:09:56.720 to your letter uh so alongside of the
+00:09:58.959 meta announcements you published a
+00:10:01.160 letter and um the first portion really
+00:10:03.839 focused on why open source is good for
+00:10:05.839 developers and I felt like really spot
+00:10:08.200 on um can you talk more about like what
+00:10:11.000 the broad societal implications are of
+00:10:13.920 Open Source AI yeah I mean my view is
+00:10:18.000 that open source is a really important
+00:10:22.160 ingredient to having a positive AI
+00:10:24.040 future and there are all these awesome
+00:10:25.760 things that AI is going to bring um in
+00:10:28.040 terms of productivity gains and
+00:10:30.399 creativity enhancements for people and
+00:10:32.760 hopefully it'll help us with research
+00:10:34.079 and things like that but I think open
+00:10:37.240 source is an important part of how we
+00:10:39.360 make sure that this benefits everyone
+00:10:41.200 and is accessible to everyone and isn't
+00:10:43.480 something that's just locked into a
+00:10:45.399 handful of big companies um at the same
+00:10:49.040 time I actually think that open source
+00:10:51.760 is going to end up being the safer and
+00:10:54.399 more secure way to develop AI I know
+00:10:56.639 that there's sort of a debate today
+00:10:57.880 about is open are safe and I actually
+00:11:02.200 take the different position on it not
+00:11:03.600 only do I think it's safe I think it's
+00:11:04.839 safer than the alternative of clo
+00:11:06.360 development and you know I sort of break
+00:11:08.079 it down into you know there there are
+00:11:10.279 lots of different kinds of harm so it's
+00:11:12.079 you can't just talk about one type of
+00:11:14.079 thing but
+00:11:15.880 um on this I think that there's there's
+00:11:19.440 unintentional harms so the system goes
+00:11:21.560 off the rails in some way um that people
+00:11:24.000 didn't intend and then there's
+00:11:25.839 intentional harms where you have like
+00:11:27.399 some Bad actors trying to use the system
+00:11:29.079 to do something bad when it comes to
+00:11:31.120 unintentional harms which I think by the
+00:11:32.800 way it's worth noting that like most of
+00:11:34.959 the Sci-Fi scenarios that people worry
+00:11:36.800 about of AI just going rogue um are kind
+00:11:39.680 of unintentional I I actually think that
+00:11:42.519 open source should be safer on that
+00:11:44.720 because it's it will have more scrutiny
+00:11:47.560 it'll have more transparency um and I I
+00:11:50.519 think all the developers who use it with
+00:11:52.959 all the Lama guard and the safety tools
+00:11:54.959 that that it comes with um there's going
+00:11:57.600 to be so much scrutiny and testing and
+00:11:59.240 pressure on those that my guess is that
+00:12:01.600 it will have kind of just like
+00:12:04.120 traditional open source software um any
+00:12:06.680 kind of issues with it I think will be
+00:12:08.000 ironed out and fixed a lot quicker than
+00:12:10.839 with when the closed models so I think
+00:12:13.040 you got you've got that on on kind of
+00:12:14.600 unintentional harm which is why I think
+00:12:15.959 most of of the discussion around safety
+00:12:18.120 for open source revolves around
+00:12:20.000 intentional harm it's okay it's open
+00:12:21.560 it's out there how are you going to stop
+00:12:23.000 Bad actors from from doing it doing bad
+00:12:25.360 things with it um there I think you
+00:12:28.360 basically want to probably divide the
+00:12:30.399 problem into kind of smaller actors like
+00:12:33.360 an individual or or um or some kind of
+00:12:36.000 smaller group that's trying to create
+00:12:37.800 some some some Mayhem and larger actors
+00:12:42.360 who are more sophisticated have huge
+00:12:43.839 amounts of resources like big nation
+00:12:45.519 states I think it's kind of a different
+00:12:47.639 mix for the two of those um you know for
+00:12:50.959 the smaller actors and my view on this
+00:12:53.639 is that um you know the way that we've
+00:12:56.959 that I think that having a balance of
+00:12:58.320 power on this is super important um you
+00:13:00.600 know what we've done in managing our
+00:13:01.760 social networks is we have all these
+00:13:03.120 kind of Bad actors who are trying to do
+00:13:06.160 kind of bad stuff on our networks and
+00:13:08.079 the way and a lot of times they deploy
+00:13:09.560 AI systems to do that and the way that
+00:13:10.959 we stop them and identify them is by
+00:13:12.920 having more sophisticated AI systems
+00:13:15.320 that have more compute to go find what
+00:13:16.959 they're doing so I think that this is
+00:13:19.639 actually pretty similar to that
+00:13:21.440 governments and law enforcement
+00:13:23.320 essentially maintain order in society
+00:13:25.240 it's like yeah you have a bunch of Rogue
+00:13:26.800 people who might be committing crimes
+00:13:28.800 but you know generally the police forces
+00:13:30.720 and the militaries are much better
+00:13:32.639 funded have more resources and I think
+00:13:34.680 that that's basically going to be true
+00:13:35.760 here as a matter of fact I think what
+00:13:37.160 you want is for open source to be widely
+00:13:39.600 deployed which I think that there's sort
+00:13:40.880 of a risk if it's closed that that's not
+00:13:42.880 the case but when it's open you're G to
+00:13:44.519 have all these big institutions that
+00:13:46.600 have a ton of resources that they can
+00:13:49.040 basically deploy these systems in a way
+00:13:50.560 that I think will check Bad actors then
+00:13:52.959 you get to um the question of of
+00:13:56.040 basically you know folks like China like
+00:13:59.440 large sophisticated actors and one of
+00:14:02.199 the questions that you sometimes he
+00:14:03.519 debated is like okay if you're open
+00:14:05.040 sourcing the really Advanced models how
+00:14:07.079 do you make it so that that it doesn't
+00:14:09.320 get to to to China or they're not going
+00:14:11.199 to use that against us and um and that's
+00:14:14.240 sometimes an argument that people have
+00:14:15.320 for hey you should lock down development
+00:14:17.000 but I think that that's sort of missing
+00:14:18.759 a few things one is that in order for
+00:14:21.240 this all to work the US has to have an
+00:14:22.839 advantage in the first place or or the
+00:14:25.040 the west and and in kind of our
+00:14:27.600 advantage is basically open and
+00:14:29.399 decentralized Innovation it's not just a
+00:14:31.399 small number of big companies or Labs
+00:14:33.079 it's startups and universities and
+00:14:35.440 individuals hacking on things who are't
+00:14:37.079 even parts of companies and that's a big
+00:14:38.959 part of it and you don't want to shut
+00:14:40.360 that down so and I think if you do you
+00:14:42.759 you you increase the chance that we
+00:14:43.839 don't even lead in the first place but
+00:14:46.480 then I think you get to the the issue
+00:14:48.399 which is okay like China or not even
+00:14:51.839 China any government um you know there
+00:14:54.560 all the risks of of kind of stealing the
+00:14:56.680 models and and Espionage I mean a lot of
+00:14:58.639 the models fit on you know a hard drive
+00:15:00.920 that you can you know quickly put in
+00:15:02.560 your backpack or whatever and it's um I
+00:15:06.040 I just think we need to be realistic
+00:15:08.040 about How likely it is that we can
+00:15:11.000 secure um and not not just not us but
+00:15:13.600 like any of the tech companies can
+00:15:14.800 secure any of these um models long-term
+00:15:17.240 against very sophisticated efforts to do
+00:15:19.759 that so my own fear is that if we lock
+00:15:23.839 down development we end up in a world
+00:15:25.720 where basically you have a small number
+00:15:27.759 of companies Plus all the adversaries
+00:15:29.920 who can steal the model are the only
+00:15:31.480 ones who have access but all the
+00:15:33.360 startups all the universities all the
+00:15:35.360 individual hackers are kind of just left
+00:15:37.440 out and and don't have the ability to do
+00:15:39.319 this so my own view is that a realistic
+00:15:42.839 aim that we should hope for is um is
+00:15:46.880 that we use open source to basically
+00:15:48.920 develop the leading and most robust
+00:15:50.839 ecosystem in the world in that we have
+00:15:53.920 an expectation that our companies work
+00:15:56.440 closely with our government and Allied
+00:15:59.040 governments on National Security so that
+00:16:01.199 way our governments can persistently
+00:16:03.240 just be integrating the latest
+00:16:04.880 technology and have a you know whatever
+00:16:06.680 it is a six-month Advantage eight-month
+00:16:08.399 advantage on our adversaries and I think
+00:16:10.120 that that's you I don't know that that
+00:16:11.519 in this world you get a 10-year
+00:16:13.319 permanent Advantage but I think a a kind
+00:16:15.360 of Perpetual lead actually will make us
+00:16:17.759 more safe um in one where we're leading
+00:16:20.959 than the model that others are
+00:16:22.040 advocating which is okay you have a
+00:16:23.199 small number of closed labs they lock
+00:16:25.199 down development we probably risk being
+00:16:27.000 in the lead at all like probably the
+00:16:28.680 other governments are are are are
+00:16:30.240 getting access to it it's that that's my
+00:16:32.680 view I I actually think on on both these
+00:16:34.720 things spreading prosperity for for um
+00:16:38.279 more evenly around the world making it
+00:16:39.959 that there can be more progress and on
+00:16:42.000 safety I think we're basically just
+00:16:43.560 going to find over time that open source
+00:16:45.040 leads um look there going to be issues
+00:16:47.839 right it's like we'll have to mitigate
+00:16:48.839 the issues we're going to test
+00:16:49.759 everything rigorously we do we work with
+00:16:51.319 governments on all the stuff we'll
+00:16:52.959 continue doing that um but that's my
+00:16:55.199 view of of kind of where the equilibrium
+00:16:57.040 I think will settle out given what I
+00:16:58.279 know today
+00:16:59.440 yeah let's talk about more on the
+00:17:01.800 benefits of Open Source AI um so another
+00:17:05.280 thing you mentioned in your letter is
+00:17:07.039 that open source a can accelerate
+00:17:09.000 Innovation and economic growth um how is
+00:17:11.959 this already happening and how do you
+00:17:14.599 see this happening more in the future
+00:17:16.839 yeah I
+00:17:18.039 mean I I think that there's a version of
+00:17:20.959 this
+00:17:21.959 which AI will do no matter how it's
+00:17:25.079 developed um and then there's a version
+00:17:26.959 of this that I think benefits from open
+00:17:29.080 source specifically so I think that AI
+00:17:32.640 has more potential than any other single
+00:17:34.400 technology that's being developed right
+00:17:36.160 now to increase productivity accelerate
+00:17:39.640 the economy um make it that kind of
+00:17:42.520 every person has the ability to be more
+00:17:44.160 creative and and and produce more
+00:17:46.440 interesting things and I think that
+00:17:48.120 that's all going to be great I I also
+00:17:49.400 think I I hope that it'll help out with
+00:17:50.720 science and um medical research and and
+00:17:53.400 things like that
+00:17:55.400 um there are a lot of folks today though
+00:17:58.480 who don't necessarily have access to the
+00:18:01.360 ability to fine-tune or build their own
+00:18:03.919 state-of-the-art models so they're sort
+00:18:05.880 of limited to what these large Labs do
+00:18:09.159 um and like I just said I I think um you
+00:18:13.120 know one of the defining aspects of our
+00:18:15.440 culture around Innovation as a sort of a
+00:18:17.320 country or or Society is like it's not
+00:18:20.159 just big companies that do it right
+00:18:21.720 there's all these startups and hackers
+00:18:23.240 and academics and people in University
+00:18:25.720 and I think you want to give all of
+00:18:27.640 those folks access to state-of-the-art
+00:18:29.960 models that they can build on top of not
+00:18:31.559 just that they can run which is what
+00:18:32.919 they have today with with the closed
+00:18:34.600 vendors but that they can build on top
+00:18:36.720 of and and tweak and distill down to
+00:18:39.200 smaller models that they can run on
+00:18:40.679 their laptop or their phone or whatever
+00:18:43.159 other device they're building and I
+00:18:45.039 think that that's just going to unlock a
+00:18:46.280 ton of progress there's also a version
+00:18:48.360 of this where there are you can look at
+00:18:50.799 it by um you know Nation to um you know
+00:18:55.919 so it's not just that startups might not
+00:18:57.600 have the resources or universities might
+00:18:59.480 not have the resources to go train their
+00:19:00.960 own um you know large scale Foundation
+00:19:03.120 models now or in the future but um but
+00:19:06.559 there are lot of countries that aren't
+00:19:07.559 going to have the ability to to do that
+00:19:09.159 because I mean you know pretty soon
+00:19:11.000 these things are going to cost many
+00:19:12.559 billions of dollars to train and um I
+00:19:16.320 think that having the ability for
+00:19:18.720 different countries and entrepreneurs
+00:19:20.240 and different countries and businesses
+00:19:22.480 to use it to serve people better and and
+00:19:25.000 just do better work is going to be
+00:19:26.520 something that that basically like lifts
+00:19:29.520 all boats around the world and um just
+00:19:32.520 has a massive kind of equalizing effect
+00:19:34.799 so I think that that's really positive
+00:19:36.919 and you know that's one of the places
+00:19:38.240 where we get the most um thanks for this
+00:19:41.440 is not actually The Tech Community but
+00:19:42.919 it's just it's like different developing
+00:19:44.559 countries there other countries that
+00:19:46.080 want to have access to the technology
+00:19:47.559 and do stuff with it um but but wouldn't
+00:19:50.559 necessarily have the the tech field
+00:19:52.600 themselves to produce something that is
+00:19:54.440 state-of-the-art that their businesses
+00:19:55.679 can build on top of but once they have
+00:19:57.200 it it's actually pretty easy to go train
+00:19:58.880 your own thing so um so that's uh that's
+00:20:01.520 that's a pretty neat part of this yeah I
+00:20:03.720 love it um one other thing I want to
+00:20:06.400 touch on from the letter is I was a
+00:20:09.520 little shocked by how directly you
+00:20:11.440 called out apple and their closed
+00:20:13.440 approach um can you kind of expand on
+00:20:16.440 that and where Apple has been a blocker
+00:20:18.720 for meta and potentially others yeah I
+00:20:22.000 mean my point in there is
+00:20:25.320 more it's a little more philosophical on
+00:20:28.200 how it affected my own kind of approach
+00:20:32.240 towards things and um and
+00:20:35.440 psychologically sort of affected how I
+00:20:37.280 think about building stuff um I actually
+00:20:39.799 don't know how they're going to approach
+00:20:41.039 AI um you know they do some open
+00:20:43.360 development they do some closed
+00:20:44.600 development um you know by the way I
+00:20:46.440 think it's worth noting like I don't
+00:20:47.799 actually consider myself to be an open
+00:20:49.200 source Zealot I just think that in this
+00:20:50.760 case um I I think that open models are
+00:20:52.760 going to be the standard and I think
+00:20:53.760 that that's going to be good for the
+00:20:54.600 world but we do open development we do
+00:20:56.000 close development so I get it right and
+00:20:57.600 and I'm not saying that Apple's
+00:20:58.880 necessarily going to be in the wrong
+00:20:59.919 place on this um for AI but if you look
+00:21:03.720 back over the last 10 or 15 years
+00:21:07.039 um it has been a formative experience
+00:21:10.120 for us is building our
+00:21:13.279 services on top of platforms that are
+00:21:15.679 controlled by our competitors and for a
+00:21:18.159 number of different
+00:21:20.320 incentives they they absolutely from my
+00:21:23.640 perspective apply different rules to
+00:21:26.000 kind of limit what we can do and and
+00:21:28.400 yeah they have all these taxes and you
+00:21:30.360 know at some point we we did um we've
+00:21:33.000 done some analysis that we we think we'd
+00:21:34.640 be you know way more profitable um if it
+00:21:37.480 weren't for some of these arbitrary
+00:21:38.679 rules and and I think a lot of other
+00:21:40.120 businesses would be too but you know
+00:21:42.799 honestly the the money part I think um
+00:21:45.679 it's annoying but for me it's not the
+00:21:47.279 biggest thing it's you I think it's a
+00:21:48.840 little bit Soul crushing when you go
+00:21:51.279 build features that are that you that
+00:21:54.480 are what you believe is good for for
+00:21:56.440 your community and then you're told that
+00:21:58.120 you can't ship them because some company
+00:22:00.760 wants to put you in a box so that they
+00:22:02.480 they can better compete with you and my
+00:22:04.799 concern for AI at this point isn't
+00:22:07.039 actually Apple it's more the other
+00:22:09.760 companies and how that would evolve and
+00:22:11.679 I I think to some degree it's not even
+00:22:13.200 that I'm not even saying that they're
+00:22:14.760 like bad people it's it's um I think
+00:22:17.720 that there's just a physics and
+00:22:19.039 incentive structure to the system where
+00:22:21.440 you know if you build a closed system
+00:22:23.799 then eventually there are all these
+00:22:24.919 forces on you that that sort of kind of
+00:22:27.200 push you to to to kind of clamp down on
+00:22:29.600 things and um I I I I think that it will
+00:22:34.080 be a healthier ecosystem if it's
+00:22:37.039 developed more like the web but
+00:22:41.279 um but more capable and I think that you
+00:22:43.960 know because of how mobile developed
+00:22:45.360 were the closed model one right I it's
+00:22:47.720 like apple I think has has really reaped
+00:22:49.440 most of the benefits um in terms of you
+00:22:51.679 know they there might be more Android
+00:22:53.159 phones out there but like apple gets
+00:22:54.919 like almost all the profits of for
+00:22:57.000 mobile phones I I think there's a bit of
+00:22:59.200 recency by bias because these are these
+00:23:01.840 are long Cycles right I mean the the
+00:23:03.520 iPhone I think it came out in 2007 right
+00:23:06.200 so we're almost 20 years into this thing
+00:23:08.000 it's a long cycle um but it's easy to
+00:23:11.480 forget the fact that the Clos model
+00:23:13.880 doesn't always win um if you go back to
+00:23:17.720 PCS um you know I know a lot of people
+00:23:20.799 have especially if you're using the
+00:23:22.600 Linux analogy people don't necessarily
+00:23:24.240 consider Windows to be maximally open
+00:23:26.640 but compared to the um the Apple
+00:23:29.080 approach of of kind of coupling your
+00:23:30.520 operating system with um with the device
+00:23:33.799 the windows approach was a more open
+00:23:35.400 ecosystem and it won and part of my hope
+00:23:39.760 for the next generation of platforms
+00:23:41.919 which includes both Ai and the work that
+00:23:44.279 we're doing an augmented in virtual
+00:23:45.919 reality is to you know meta wants to be
+00:23:48.559 on the side of building the open
+00:23:50.240 ecosystems and it's not just that we
+00:23:52.799 want to build something that's an
+00:23:53.720 alternative to the closed ecosystem I
+00:23:55.240 want to restore the industry to the
+00:23:56.640 state where the open ecosystem is is
+00:23:58.600 actually the one that is leading um so I
+00:24:01.520 think it's possible I I think we'll you
+00:24:03.679 know I think we're making good steps on
+00:24:05.200 that in both Ai and AR and VR U but but
+00:24:09.200 that's something that I just personally
+00:24:10.720 and philosophically care about given the
+00:24:13.880 the kind of limits on on creativity that
+00:24:16.000 I I've felt have sort of been applied to
+00:24:18.279 to our industry by the closed model of
+00:24:20.080 of mobile development over the last 105
+00:24:21.880 years I want to go deeper on that point
+00:24:24.480 that you just mentioned of restoring the
+00:24:26.880 industry to the state where the open
+00:24:29.159 ecosystem is the one that's
+00:24:31.120 leading um and so obviously right now we
+00:24:33.399 have llama 3.1 405b just came out it's
+00:24:36.880 competitive and it even beats some of
+00:24:38.679 the best closed models across key
+00:24:40.640 benchmarks which is insane in its own
+00:24:43.799 right uh but in your letter you also
+00:24:45.919 mentioned that llama 4 is expected to
+00:24:48.240 become the most advanced model in the
+00:24:50.720 industry are there any specific things
+00:24:53.240 about llama 4 that you're really excited
+00:24:55.840 about oh man I mean it's um you know
+00:24:58.559 we're just doing 3.1 for for for llama
+00:25:01.120 now I I think it might be a little early
+00:25:02.840 to to talk about llama 4 but um but
+00:25:06.360 we've got the compute cluster set up um
+00:25:08.559 we've got a bunch of the data set up we
+00:25:10.880 we kind of have a sense of what what the
+00:25:12.520 the architecture is going to be and and
+00:25:14.559 and I've run a bunch of research
+00:25:15.799 experiments to to kind of Max that out
+00:25:17.640 so I I do think that um llama 4 is going
+00:25:20.559 to be another big leap on top of llama 3
+00:25:23.000 I think we have um a bunch more progress
+00:25:25.840 that we can make I mean this is the
+00:25:26.960 first dot release for llama
+00:25:29.120 um there's more that I'd like to do um
+00:25:32.559 including launching the uh the the
+00:25:35.799 multimodal models um which we we kind of
+00:25:38.440 had an unfortunate setback on on on that
+00:25:41.799 um but but I think we're going to be
+00:25:43.200 launching them probably everywhere
+00:25:44.320 outside of the EU um uh hopefully over
+00:25:47.480 the next few months but um yeah probably
+00:25:51.480 a little early to talk about llama 4 but
+00:25:53.360 but it is going to be awesome and it has
+00:25:55.720 been one of the interesting things in
+00:25:56.840 running the company is basically
+00:25:58.679 planning out the compute clusters and
+00:26:03.159 data
+00:26:04.200 trajectories for not just llama 4 but
+00:26:07.960 you know the next um probably four or
+00:26:11.159 five versions of llama because I mean
+00:26:13.240 these are long lead Time Investments to
+00:26:15.039 build out these data centers and and the
+00:26:18.200 power around them and um the chip
+00:26:20.480 architectures and the networking
+00:26:21.679 architecture so all this stuff um so
+00:26:24.279 yeah I I realize that's that's a bit of
+00:26:26.120 a non-answer for now other than just
+00:26:27.640 some general excitement but um I don't
+00:26:30.559 know let's uh I I I think llama 3
+00:26:33.960 deserves at least um you know llama 3.1
+00:26:36.399 deserves at least a week of of kind of
+00:26:38.480 just processing um you know what we've
+00:26:40.720 put out there before we get into talking
+00:26:42.919 about the future that's fair and I
+00:26:45.159 completely agree that the next couple
+00:26:46.880 weeks are going to be wild just with 3.1
+00:26:49.760 uh but it's still super exciting
+00:26:50.919 obviously to hear that meta has already
+00:26:52.360 get anything ready for llama 4 um on
+00:26:55.799 that front though can you talk more
+00:26:57.600 about your long-term vision for what you
+00:27:00.480 think is going to happen with AI and
+00:27:01.720 possibly AGI in the future yeah I mean
+00:27:04.840 I'm happy to talk about it both from a
+00:27:06.480 technical perspective and a product
+00:27:09.000 perspective but since we've mostly
+00:27:10.200 talked about the models so far maybe
+00:27:11.799 I'll start with um with the products so
+00:27:15.559 our vision is that there should be a lot
+00:27:18.640 of different AIS out there and AI
+00:27:20.760 services not just kind of One Singular
+00:27:24.399 AI um and that really informs the open
+00:27:27.440 source approach it's you know it also
+00:27:29.760 informs the product road map so yeah we
+00:27:32.000 we have meta AI um met AI is doing quite
+00:27:35.000 well my goal was for it to be the most
+00:27:36.640 used AI assistant in the world by the
+00:27:39.520 end of the year I think we're well on
+00:27:41.480 track for that we'll probably hit it hit
+00:27:43.320 that Milestone um you know few months
+00:27:46.880 before the end of the year um and and
+00:27:50.000 look on that you know I think we just
+00:27:51.480 have the ability in the business model
+00:27:53.440 to basically build in the most advanced
+00:27:56.120 models in the world and offer it to
+00:27:57.919 everyone for free so I think that that's
+00:27:59.960 a you know kind of a huge Advantage um
+00:28:03.480 it's really easy to use from all of our
+00:28:05.480 apps um so I'm pretty excited about how
+00:28:08.240 that's going so that's yeah we have the
+00:28:09.880 basic assistant um and and I think that
+00:28:11.919 that's going to be a big deal but even
+00:28:13.600 more than that a lot of what we're
+00:28:15.960 focused on is giving every Creator and
+00:28:19.200 every small business um the ability to
+00:28:21.640 create AI agents for themselves um
+00:28:24.559 making it so that every person on our
+00:28:26.600 platforms can create their own AI agents
+00:28:29.039 that they want to interact with and if
+00:28:31.000 you think about it these are just huge
+00:28:32.760 spaces right so there are hundreds of
+00:28:34.760 millions of small businesses in the
+00:28:36.159 world and one of the things I think is
+00:28:38.600 really important is basically making it
+00:28:40.799 so with a relatively small amount of
+00:28:42.640 work um a business can basically you
+00:28:45.760 know few Taps um stand up an AI agent
+00:28:48.440 for themselves that uh can do customer
+00:28:51.880 support sales communicate with all their
+00:28:54.240 people all their customers I kind of
+00:28:57.080 think that every business in the the
+00:28:58.240 future just like they have an email
+00:29:00.200 address and a website and a social media
+00:29:02.039 presence today I think every business is
+00:29:03.960 going to have a um an AI agent that
+00:29:06.480 their customers can talk to in the
+00:29:07.679 future and we want to enable that for
+00:29:10.120 all of those that's that's going to be
+00:29:11.240 hundreds of millions maybe billions of
+00:29:13.559 what kind of small business agents
+00:29:15.600 similar deal for creators um there are
+00:29:18.320 more than it's more than 200 million
+00:29:20.880 people on our platforms who consider
+00:29:22.519 themselves creators who basically use
+00:29:23.919 our platform um in a way that is
+00:29:26.320 primarily for you know building a
+00:29:28.360 Community um you know put putting out
+00:29:30.880 content feel like it's it's kind of like
+00:29:32.159 a part of their job is is doing that and
+00:29:35.600 they all have this basic issue which is
+00:29:37.039 that there aren't enough hours in the
+00:29:38.200 day to engage with their Community as
+00:29:39.559 much as they'd like and likewise I think
+00:29:41.720 that their communities would generally
+00:29:42.919 want more of their time but um but again
+00:29:45.440 not enough hours in the day so I just
+00:29:47.720 think it's a there's going to be a huge
+00:29:49.840 unlock where basically every Creator can
+00:29:52.200 pull in all their information from
+00:29:53.480 social media can train these systems um
+00:29:56.240 to reflect their values and their
+00:29:57.720 business objectives and what they're
+00:29:58.960 trying to do and then people can can
+00:30:01.919 interact with that it'll be almost like
+00:30:03.480 this almost artistic artifact that
+00:30:05.880 creators create that um that people can
+00:30:09.240 can can kind of interact with in
+00:30:10.440 different ways and then and that's not
+00:30:11.960 even getting into all the different ways
+00:30:13.640 that I think people are going to be able
+00:30:14.880 to create you know different AI agents
+00:30:16.720 for themselves to do different things so
+00:30:18.039 I think we're going to live in a world
+00:30:18.960 where there are going to be hundreds of
+00:30:20.480 millions of billions of different AI
+00:30:22.399 agents eventually probably more AI
+00:30:24.640 agents than there are people in the
+00:30:25.880 world and um and the people just
+00:30:28.080 interact with them in all these
+00:30:28.880 different ways so that's part of you
+00:30:31.200 know that's the product Vision um
+00:30:33.840 obviously there's a lot of business
+00:30:35.000 opportunity in that that's where we want
+00:30:37.080 to go make money so we don't want to
+00:30:38.559 we're not going to make money from
+00:30:39.480 selling access to the model itself um
+00:30:42.039 because again we're not a public Cloud
+00:30:43.279 company we will make money by building
+00:30:45.279 the best products an important
+00:30:47.279 ingredient to the best products is
+00:30:48.559 building is having the best models which
+00:30:50.720 having the best kind of ecosystem around
+00:30:52.440 open source will help us do so that's
+00:30:55.279 why it's kind of all aligned for us and
+00:30:57.519 why this is is going to end up I think
+00:30:59.360 being really valuable for us to build
+00:31:01.880 the the highest quality products that we
+00:31:03.519 can um and and have the best business
+00:31:06.039 results by by kind of building out this
+00:31:07.559 open source Community but but it's also
+00:31:09.279 why it's all philosophically aligned
+00:31:10.799 right we don't we just don't believe
+00:31:11.880 that there's going to be kind of one big
+00:31:14.440 AI whether it's a product or a model
+00:31:16.360 that everyone uses we kind of
+00:31:18.600 fundamentally believe in having this
+00:31:20.519 broad diversity and different set of
+00:31:22.600 models and that you know every business
+00:31:24.639 and um you people are just going to want
+00:31:26.960 a lot of their own stuff they're going
+00:31:28.159 to make and I think that's kind of going
+00:31:29.600 to be interesting it's going to be a lot
+00:31:31.240 of what makes this interesting yeah I
+00:31:32.840 think it's really interesting to see how
+00:31:34.360 met is integrating the tech directly
+00:31:36.240 into his products and obviously giving a
+00:31:39.320 frontier level AI model for free to
+00:31:41.159 billions of users is a huge deal um but
+00:31:44.360 on that I have a final question around
+00:31:47.240 skepticism and for context in the 1990s
+00:31:51.000 skepticism around the internet was
+00:31:53.159 everywhere but eventually it became
+00:31:55.799 almost irrational to oppose it
+00:31:58.720 and it kind of feels like we're in a
+00:32:00.200 similar trajectory with skepticism
+00:32:02.559 around AI right now do you think we're
+00:32:05.320 kind of at that early stage and there'll
+00:32:07.360 be a point where anti-a sentiment will
+00:32:10.120 be viewed similar to the internet today
+00:32:13.000 and what kind of factors you think will
+00:32:14.760 be crucial in changing that perspective
+00:32:17.760 I think there are different ways of uh
+00:32:21.360 different ways that people can be
+00:32:22.679 worried about something I mean it's
+00:32:25.600 um I mean financially one thing that I'm
+00:32:27.960 quite aware of is the internet um had a
+00:32:31.240 big bubble burst before it succeeded and
+00:32:34.720 you know so all the people who were very
+00:32:36.480 long on the internet um were eventually
+00:32:39.240 right but sometimes things take a little
+00:32:41.159 longer to develop than you think and you
+00:32:42.760 just need to have the commitment to see
+00:32:44.200 that through and um that's something
+00:32:46.039 that I'm aware of because yeah I mean I
+00:32:48.080 I I'm really excited about you know all
+00:32:49.720 the unlocks that we're going to get from
+00:32:50.880 llama 3 and then llama 4 and then llama
+00:32:52.799 5 and I think that's going to translate
+00:32:53.880 into better products but realistically
+00:32:57.679 um
+00:32:59.000 it's hard to know in advance when
+00:33:01.279 something is good enough that you're
+00:33:02.679 going to have a product that billions of
+00:33:04.120 people use and then when it's ready to
+00:33:06.360 to kind of be a large business and I
+00:33:08.320 mean look we're all spending you know a
+00:33:09.760 lot of capital and and on basically
+00:33:12.519 training these models so I I think that
+00:33:13.919 people are going to be probably losing
+00:33:15.360 money for quite a while um but but I
+00:33:17.279 don't know maybe maybe that'll all
+00:33:18.639 happen quicker I'm it's it's it's hard
+00:33:20.360 to know exactly um the other part of
+00:33:23.840 this that I think you are more getting
+00:33:25.519 at is people's concern about what it
+00:33:27.480 means for their livelihoods and on that
+00:33:31.519 this is one of the reasons why I think
+00:33:32.840 the open source approach the approach of
+00:33:35.600 um lots of different models out there
+00:33:37.639 that are kind of personalized and
+00:33:39.200 customized to to every business and
+00:33:41.320 every Creator and every person um I
+00:33:44.840 think that's important because if this
+00:33:46.840 of develops in a way where it's just a
+00:33:51.080 you know a small number of companies
+00:33:52.760 that build the products and benefit and
+00:33:55.639 people use the products and maybe they
+00:33:57.000 like talking to to you know an AI
+00:33:59.360 assistant and that's valuable for them
+00:34:01.519 but you know if that if this doesn't in
+00:34:04.320 some way help lift all boats then I
+00:34:07.840 think you end up eventually getting a
+00:34:09.520 backlash and part of what I've spent
+00:34:12.599 some time thinking about after just
+00:34:15.159 looking at how the kind of Web 2.0 stuff
+00:34:18.399 developed is in the next generation of
+00:34:21.199 Technologies around AI around AR and VR
+00:34:25.079 how do we create not just a kind of
+00:34:27.719 thriving set of products um and and kind
+00:34:30.879 of economic kind of productivity gains
+00:34:33.320 but how do we have like a better and
+00:34:35.119 more sustainable political economy
+00:34:36.879 around it where there's just way more
+00:34:38.719 people who are who who feel like they're
+00:34:41.280 they're kind of bought in or benefiting
+00:34:42.839 from this um and supportive of of of the
+00:34:45.480 system and you know I I I thought we did
+00:34:48.599 that reasonably well with social media
+00:34:50.918 but um but I you know just looking at
+00:34:53.040 some of the feedback and some of the
+00:34:54.119 response from from the world um I think
+00:34:56.760 that it's going to be important to do
+00:34:57.920 that even better with AI and some of the
+00:34:59.680 new technologies in order to to uh
+00:35:02.640 mitigate some of the concerns that
+00:35:04.119 people are going to have about what this
+00:35:05.280 is going to mean for their livelihoods
+00:35:06.800 and and and jobs and their lives yeah I
+00:35:09.200 don't think anyone could have said it
+00:35:10.680 any better um but Mark it's been amazing
+00:35:13.200 speaking with you thanks so much for
+00:35:14.960 doing this and thanks for everything you
+00:35:16.560 and met are doing for the AI Community
+00:35:19.000 happy to do it and um I'm really looking
+00:35:20.880 forward to seeing what people build

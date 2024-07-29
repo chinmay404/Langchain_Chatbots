@@ -1,3 +1,2 @@
 # Langchain_Chatbots
- 
- Coding and learning new things
+learning Langcahin by creating Simple codes
